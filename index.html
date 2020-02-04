@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Sonal's Art Studio</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <link href="https://fonts.googleapis.com/css?family=Cookie&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/44cce853e6.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <header>
+        <nav id="container">
+            <span class="toggleBars logo" id="togMenu">Sonal's Art Studio<i class="fas fa-bars bars"></i></span>
+            <ul class="topBar" id="js-menu">
+                <li class="rightMenuItems logo"><a href="#home">Sonal's Art Studio</a></li>
+                <li><a class="menuItems" href="#about">ABOUT</a></li>
+                <li><a class="menuItems" href="#gallery">GALLERY</a></li>
+                <li><a class="menuItems" href="#testimonials">TESTIMONIALS</a></li>
+                <li><a class="menuItems" href="#contact">CONTACT</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="home">
+        <div id="heroImage">
+            <div class="overlay">
+                <h1 class="coverTitle">Lorem Ipsum Sit Doler</h1>
+            </div>
+        </div>
+
+    </section>
+
+    <section id="about">
+        <div class="aboutContainer">
+            <div class="flexItems">
+                <img src="images/portfolioPic1.jpg" alt="Portfolio Pic" class="pic">
+            </div>
+            <div class="flexItems bio">
+                <p class="bioHeading">About Sonal</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Nec feugiat in fermentum posuere urna. Amet facilisis magna etiam tempor orci eu lobortis.</p>
+                <p>Dapibus ultrices in iaculis nunc sed. Tortor pretium viverra suspendisse potenti nullam ac. Faucibus nisl tincidunt eget nullam. Ut placerat orci nulla pellentesque dignissim enim sit. In eu mi bibendum neque egestas congue. Viverra vitae
+                    congue eu consequat ac felis donec. </p>
+                <p>Ut placerat orci nulla pellentesque dignissim enim sit. In eu mi bibendum neque egestas congue. Viverra vitae congue eu consequat ac felis donec.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="gallery">
+        <!-- <h2 class="galleryHeading">Gallery</h2> -->
+        <div class="paintingsContainer">
+            <div><img src="images/painting1.jpg" alt="Portfolio Pic" class="paintItems"></div>
+            <div><img src="images/p2.jpg" alt="Portfolio Pic" class="paintItems"></div>
+            <div><img src="images/p3.jpg" alt="Portfolio Pic" class="paintItems"></div>
+            <div><img src="images/p4.jpg" alt="Portfolio Pic" class="paintItems"></div>
+            <div><img src="images/p5.jpg" alt="Portfolio Pic" class="paintItems"></div>
+            <div><img src="images/p6.jpg" alt="Portfolio Pic" class="paintItems"></div>
+            <div><img src="images/p7.jpg" alt="Portfolio Pic" class="paintItems"></div>
+            <div><img src="images/p8.jpg" alt="Portfolio Pic" class="paintItems"></div>
+        </div>
+    </section>
+
+    <section id="testimonials">
+        <div class="testHead">What People Are Saying</div>
+        <div id="testContainer">
+            <!-- Slideshow container -->
+            <div class="slideshow-container">
+
+                <!-- Full-width slides/quotes -->
+                <div class="mySlides">
+                    <q>I love you the more in that I believe you had liked me for my own sake and for nothing else</q>
+                    <p class="author">- John Keats</p>
+                </div>
+
+                <div class="mySlides">
+                    <q>But man is not made for defeat. A man can be destroyed but not defeated.</q>
+                    <p class="author">- Ernest Hemingway</p>
+                </div>
+
+                <div class="mySlides">
+                    <q>I have not failed. I've just found 10,000 ways that won't work.</q>
+                    <p class="author">- Thomas A. Edison</p>
+                </div>
+
+                <!-- Next/prev buttons -->
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+                <!-- Dots/bullets/indicators -->
+                <div class="dot-container">
+                    <span class="dot" onclick="currentSlide(1)"></span>
+                    <span class="dot" onclick="currentSlide(2)"></span>
+                    <span class="dot" onclick="currentSlide(3)"></span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <div class="wave-container">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#fbf5fb" fill-opacity="1" d="M0,224L48,224C96,224,192,224,288,213.3C384,203,480,181,576,149.3C672,117,768,75,864,90.7C960,107,1056,181,1152,202.7C1248,224,1344,192,1392,176L1440,160L1440,0L1392,0C1344,0,1248,0,1152,0C1056,0,960,0,864,0C768,0,672,0,576,0C480,0,384,0,288,0C192,0,96,0,48,0L0,0Z"></path></svg>
+        </div>
+        <div class="contactContainer">
+            <p class="contactItems logo clr fontLogo">Sonal's Art Studio</p>
+            <p class="contactItems">8888 Lorem Ave</p>
+            <p class="contactItems mt">Fremont, CA 99999</p>
+            <p class="contactItems clr">(999) 999 9999</p>
+            <p class="contactItems">info@sonalArtStudio.com</p>
+            <div class="socialContainer">
+                <i class="fab fa-facebook-f socialIcons"></i>
+                <i class="fab fa-twitter socialIcons"></i>
+                <i class="fab fa-instagram socialIcons"></i>
+            </div>
+        </div>
+    </section>
+
+    <footer id="footer">
+        <p class="foot">Copyright &copy; 2020 Sonal's Art Studio. All rights reserved.</p>
+        <div class="upArrow"><i class="fas fa-arrow-alt-circle-up "></i></div>
+    </footer>
+    <script type="text/javascript" src="script.js"></script>
+</body>
+
+</html>

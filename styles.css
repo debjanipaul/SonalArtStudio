@@ -1,0 +1,490 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Cambria;
+}
+
+
+/* Navbar styles*/
+
+a {
+    color: purple;
+    text-decoration: none;
+}
+
+a:active {
+    text-decoration: underline;
+}
+
+#link {
+    color: blue
+}
+
+.logo {
+    font-family: 'Cookie', cursive;
+    font-size: 30px;
+    color: #bf40bf;
+}
+
+.menuItems {
+    font-size: 18px;
+}
+
+#container {
+    width: 100%;
+    height: 70px;
+    background-color: #FFFFFF;
+    position: fixed;
+    top: 0;
+    z-index: 99;
+}
+
+.toggleBars {
+    color: purple;
+    font-size: 30px;
+    display: none;
+    padding: 0px 5px;
+    margin: 5px;
+}
+
+.bars {
+    margin-right: 0;
+    margin-left: 18vh;
+}
+
+.topBar {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 0px;
+    padding-top: 20px;
+    padding-bottom: 8px;
+    padding-right: 20px;
+}
+
+.topBar li {
+    margin-left: 35px;
+    color: #bf40bf;
+}
+
+.rightMenuItems {
+    margin-right: auto;
+}
+
+
+/* Hero section */
+
+#home {
+    background-color: #fbf5fb;
+}
+
+#heroImage {
+    background-image: url("images/background.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 130vh;
+    margin-top: -10rem;
+    overflow-y: hidden;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    border-bottom-left-radius: 50% 20%;
+    border-bottom-right-radius: 50% 20%;
+}
+
+.overlay {
+    width: 100;
+    /* background-color: rgba(0, 0, 0, 0.4);
+    border-radius: 8px; */
+    align-self: center;
+    margin: auto;
+}
+
+.coverTitle {
+    text-align: center;
+    color: purple;
+    font-size: 50pt;
+    letter-spacing: 3px;
+    margin-bottom: 0;
+    padding-top: 2%;
+    text-shadow: 2px 2px 5px rgb(154, 124, 158);
+}
+
+
+/* About section*/
+
+.wave-container {
+    position: relative;
+    background: #330033;
+    color: #FFF;
+    text-align: center;
+    /* overflow: hidden; */
+    z-index: 0;
+}
+
+.aboutContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    background-color: #fbf5fb;
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+}
+
+.flexItems {
+    margin: 30px;
+    height: 300px;
+    width: 220px;
+}
+
+.bioHeading {
+    color: #ac39ac;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.bio {
+    margin-top: 0px;
+    text-align: center;
+    color: #595959;
+    font-size: 18px;
+}
+
+.pic {
+    height: 310px;
+    width: 220px;
+    border-radius: 5px;
+}
+
+
+/* Gallery section styles */
+
+#gallery {
+    background-image: url("images/galleryBackground.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    width: 100%;
+    height: auto;
+    padding-bottom: 2rem;
+}
+
+.galleryHeading {
+    text-align: center;
+    color: #fff;
+    padding-top: 40px;
+    font-size: 30px;
+}
+
+.paintingsContainer {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-top: 5rem;
+}
+
+.paintItems {
+    height: 300px;
+    width: 220px;
+    margin: 15px;
+    border: 5px solid #fff;
+}
+
+
+/* Testimonials sction styles*/
+
+#testimonials {
+    /* height: 130vh; */
+    background-color: #fbf5fb;
+}
+
+.testHead {
+    color: #ac39ac;
+    font-size: 45px;
+    font-weight: bold;
+    text-align: center;
+    padding-top: 5rem;
+}
+
+
+/* 
+#testContainer {
+    width: 70%;
+    height: 35rem;
+    background-image: linear-gradient(to left, #114491, #36409b, #5639a1, #742ba2, #92079e);
+    border-radius: 3rem;
+    margin: auto;
+    margin-top: 3rem;
+} */
+
+
+/* Slideshow container */
+
+.slideshow-container {
+    position: relative;
+    /* background: #f1f1f1f1; */
+    width: 70%;
+    /* height: 35rem; */
+    background-image: linear-gradient(to left, #114491, #36409b, #5639a1, #742ba2, #92079e);
+    border-radius: 3rem;
+    margin: auto;
+    margin-top: 3rem;
+}
+
+
+/* Slides */
+
+.mySlides {
+    display: none;
+    padding: 80px;
+    padding-top: 100px;
+    text-align: center;
+    font-size: 22px;
+    color: #fff;
+}
+
+
+/* Next & previous buttons */
+
+.prev,
+.next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -30px;
+    padding: 16px;
+    color: #888;
+    font-weight: bold;
+    font-size: 20px;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+
+
+/* Position the "next button" to the right */
+
+.next {
+    position: absolute;
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+
+/* On hover, add a black background color with a little bit see-through */
+
+.prev:hover,
+.next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
+}
+
+
+/* The dot/bullet/indicator container */
+
+.dot-container {
+    text-align: center;
+    padding: 20px;
+    /* background: #ddd; */
+}
+
+
+/* The dots/bullets/indicators */
+
+.dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+
+/* Add a background color to the active dot/circle */
+
+.active,
+.dot:hover {
+    background-color: purple;
+}
+
+
+/* Add an italic font style to all quotes */
+
+q {
+    font-style: italic;
+}
+
+
+/* Add a blue color to the author */
+
+.author {
+    color: cornflowerblue;
+}
+
+
+/* Contact section */
+
+.contactContainer {
+    height: 300px;
+    width: 100%;
+    background-color: #330033;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: -40px;
+    padding-bottom: 70px;
+}
+
+.contactItems {
+    color: #fff;
+    align-self: center;
+    margin-bottom: 0px;
+    font-size: 20px;
+}
+
+.clr {
+    color: #ac39ac;
+}
+
+.fontLogo {
+    font-size: 40px;
+}
+
+.mt {
+    margin-top: -1px;
+}
+
+.socialContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.socialIcons {
+    color: #ac39ac;
+    margin: 10px;
+    font-size: 25px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.upArrow {
+    font-size: 35px;
+    color: #ac39ac;
+    margin-right: 0px;
+    margin-top: -40px;
+    padding-right: 20px;
+    margin-left: auto;
+}
+
+
+/* footer styles*/
+
+#footer {
+    display: flex;
+    flex-direction: row;
+    /* justify-content: center; */
+}
+
+.foot {
+    text-align: center;
+    color: gray;
+    height: 25px;
+    margin-left: 30%;
+}
+
+
+/* Responsiveness for smaller screens */
+
+@media only screen and (max-width: 600px) {
+    a {
+        color: #fff;
+    }
+    .topBar {
+        flex-direction: column;
+        display: none;
+        background-color: rgba(0, 0, 0, 0.9);
+        height: 100vh;
+        line-height: 2.5;
+        padding-bottom: 10px;
+        justify-content: center;
+        align-items: center;
+    }
+    .topBar li {
+        margin-left: 0px;
+    }
+    .menuItems {
+        font-size: 22px;
+    }
+    .active {
+        display: flex;
+    }
+    .toggleBars {
+        align-self: flex-end;
+        display: initial;
+        position: absolute;
+        cursor: pointer;
+    }
+    .rightMenuItems {
+        display: none;
+    }
+    #heroImage {
+        border-radius: 0%;
+    }
+    .coverTitle {
+        font-size: 30pt;
+        letter-spacing: 1px;
+    }
+    .aboutContainer {
+        flex-direction: column;
+        justify-content: center;
+    }
+    .flexItems {
+        padding-bottom: 2rem;
+        align-self: center;
+        height: auto;
+    }
+    .bio {
+        margin-top: -40px;
+    }
+    .mySlides {
+        padding: 30px;
+        font-size: 20px;
+    }
+    .dot-container {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+    .dot {
+        height: 10px;
+        width: 10px;
+    }
+    .foot {
+        margin-left: 30px;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    .flexItems {
+        height: 500px;
+        width: 440px;
+    }
+    .pic {
+        height: 470px;
+        width: 400px;
+        border-radius: 5px;
+    }
+}
+
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+    #heroImage {
+        border-radius: 0%;
+    }
+}
